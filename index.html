@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-        <h1>Mod</h1>
+        <h1 class="logo">Mod</h1>
         <nav>
-          <ul>
+          <ul class="mainmenu">
             <li><a href="#biography">Biography</a></li>
             <li><a href="#designers">Designers</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
@@ -21,42 +21,51 @@
       </header>
     
       <main>
-            <article id="hero" class="hero">
-                <h2>Mod Studio</h2>
-                <p>Modern Web Studio</p>
-            </article>
+        <article id="hero" class="hero-block">
+          <div class="herocentral">
+            <h2>Mod Studio</h2>
+            <p>Modern Web Studio</p>
+          </div>
+        </article>
 
-        <!-- Блок biography-->
-            <article id="biography" class="bio">
-                <h2 id="bio-title">Biography</h2>
-                <img src="img/katya_mills.jpg" alt="Katya Mills" />
-                <h3>Katya Mills</h3>
+        <article id="biography" class="bio-block">
+            <div class="bio-image">
+            </div>
+            <div class="bio-title">
+              <h2>Biography</h2>
+            </div>
+            <div class="bio-decription">
+              <h3>Katya<br/>Mills</h3>
+              <div class="bio-whois">
                 <p><strong>Art Director</strong></p>
                 <p><strong>Scenography / Styling / Creative Photography / Design</strong></p>
-                <blockquote>
-                    “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”
-                </blockquote>
-            </article>
+              </div>
+              <hr class="bio-delimiter">
+              <blockquote>
+                  “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”
+              </blockquote>
+            </div>
+        </article>
     
         <!-- Блок designers-->
-        <article id="designers" class="designers">
+        <article id="designers" class="designers-block">
           <h2 id="designers-title">Designers</h2>
     
-          <section>
+          <section class="designer-item">
             <img src="img/JessWonder.png" alt="Jess Wonder" />
             <h3>JESS WONDER</h3>
             <p><strong>From/</strong> Be more flower</p>
             <p><strong>Skills/</strong> Design Strategy / Marketing</p>
           </section>
     
-          <section>
+          <section class="designer-item">
             <img src="img/KameronClein.png" alt="Kameron Clein" />
             <h3>KAMERON CLEIN</h3>
             <p><strong>From/</strong> Be more flower</p>
             <p><strong>Skills/</strong> Design Strategy / Marketing</p>
           </section>
     
-          <section>
+          <section class="designer-item">
             <img src="img/LouisseRed.png" alt="Louisse Red" />
             <h3>Louisse Red</h3>
             <p><strong>From:/</strong> Be more flower</p>
@@ -65,35 +74,35 @@
         </article>
     
         <!-- Блок testimonials-->
-        <article id="testimonials" class="testimonials">
-            <section>
-                <section>
+        <article id="testimonials" class="testimonials-block">
+            <section class="testimonials-sidebar">
+                <section class="testimonials-sidebar-item">
                     <h3>Creativity</h3>
                     <a href="www.whitepapers.com">www.whitepapers.com</a>
                 </section>
-                <section>
+                <section class="testimonials-sidebar-item">
                     <h3>Creativity</h3>
                     <a href="www.whitepapers.com">www.whitepapers.com</a>
                 </section>
-                <section>
+                <section class="testimonials-sidebar-item">
                     <h3>Website</h3>
                     <a href="www.whitepapers.com">www.whitepapers.com</a>
                 </section>
             </section>
-            <img src="img/cafe.png" alt="Cafe" />
+            <img src="img/cafe.png" alt="Cafe" class="testimonials-image-main"/>
             <h2>Testimonials</h2>
             <blockquote>
                 I just really want to do good work and work with some great people, people who challenge me.
             </blockquote>
-            <img src="img/bag.png" alt="Bag" />
+            <img src="img/bag.png" alt="Bag" class="testimonials-image-small"/>
         </article>
     
-        <article id="strengths" class="strengths">
+        <article id="strengths" class="strengths-block">
           <h2>Strong Points</h2>
           <img src="img/interrior1.jpg" alt="Design" />
           <img src="img/interrior2.png" alt="Interiors" />
           <h3>Strengths</h3>
-          <ul>
+          <ul class="strengths-list">
             <li>Interiors</li>
             <li>Outdoors</li>
             <li>Portraits</li>
