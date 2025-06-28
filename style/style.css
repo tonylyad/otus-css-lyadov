@@ -76,6 +76,12 @@ header{
     gap: 56px;
 }
 
+@media (max-width: 900px) { 
+    .mainmenu{
+        display: none;
+    }
+}
+
 
 /*Hero*/
 
@@ -275,15 +281,16 @@ header{
 }
 
 
-
 /*Блок testimonials*/
 
 .testimonials-block{
+    margin: 0 auto;
     max-width: 1400px;
     height: 760px;
     display: grid;
     grid-template-columns: 17% 32% 70px 43%;
     grid-template-rows: 240px 260px 260px;
+    margin-bottom: 151px;
 }
 
 .testimonials-sidebar-item-1,
@@ -374,17 +381,46 @@ header{
     background-position: center;
 }
 
+/*Strong points*/
+
 .strengths-block{
     font-family: "Bitter Regular";
     font-size: 34px; 
+    margin-bottom: 146px;
+}
+
+.strengths-section-header{
+    margin-left: 258px;
+    margin-bottom: 32px;
+}
+
+.strengths-carousel{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.strengths-list-block{
+    width: 600px;
 }
 
 .strengths-block h2{
     font-family: "Roboto", sans-serif;
 }
 .strengths-block h3{
-    
+    text-align: center;
     font-size: 86px;
+    margin-bottom: 32px;
+} 
+
+.strengths-block ul{
+    margin-left: 120px;
+} 
+
+.strengths-block ul li{
+    margin-bottom: 8px;
 } 
 
 address{
@@ -395,6 +431,21 @@ address{
 
 address a{
     font-size: inherit;
+}
+
+footer a{
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 166px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+    align-items: center;
 }
 
 footer strong{
