@@ -76,6 +76,12 @@ header{
     gap: 56px;
 }
 
+@media (max-width: 900px) { 
+    .mainmenu{
+        display: none;
+    }
+}
+
 
 /*Hero*/
 
@@ -274,6 +280,7 @@ header{
     font-weight: bolder;
 }
 
+
 /*Блок testimonials*/
 
 .testimonials-block{
@@ -283,53 +290,7 @@ header{
     display: grid;
     grid-template-columns: 17% 32% 70px 43%;
     grid-template-rows: 240px 260px 260px;
-}
-
-.testimonials-sidebar-item-1,
-.testimonials-sidebar-item-2,
-.testimonials-sidebar-item-3 {
-  grid-column: 1;
-  position: relative;
-}
-
-.testimonials-sidebar-item-1{
-    grid-row: 1;
-
-}
-.testimonials-sidebar-item-2{
-    grid-row: 2;
-    
-}
-.testimonials-sidebar-item-3{
-    grid-row: 3;
-}
-
-.testimonials-sidebar-item-inner
-{
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  position: absolute;
-  bottom: 30px;
-  right: 40px;
-}
-
-.testimonials-image-main{
-    grid-column: 2; grid-row: span 3;
-    background-image: url('../img/cafe.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-/*Блок testimonials*/
-
-.testimonials-block{
-    margin: 233px auto;
-    max-width: 1400px;
-    height: 760px;
-    display: grid;
-    grid-template-columns: 17% 32% 70px 43%;
-    grid-template-rows: 240px 260px 260px;
+    margin-bottom: 151px;
 }
 
 .testimonials-sidebar-item-1,
@@ -420,17 +381,56 @@ header{
     background-position: center;
 }
 
+/*Strong points*/
+
 .strengths-block{
     font-family: "Bitter Regular";
     font-size: 34px; 
+    margin-bottom: 146px;
 }
+
+.strengths-section-header{
+    margin-left: 258px;
+    margin-bottom: 32px;
+}
+
+.strengths-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+@supports (display: grid) {
+    .strengths-carousel {
+        display: grid;
+        grid-template-columns: 335px 335px 376.250px 237px;
+        gap: 20px;
+        overflow-x: auto;
+        margin-left: 20px;
+    }
+}
+
+ .strengths-list-block{
+    width: 376.250px;
+} 
 
 .strengths-block h2{
     font-family: "Roboto", sans-serif;
 }
 .strengths-block h3{
-    
+    text-align: center;
     font-size: 86px;
+    margin-bottom: 32px;
+} 
+
+.strengths-block ul{
+    margin-left: 120px;
+} 
+
+.strengths-block ul li{
+    margin-bottom: 8px;
 } 
 
 address{
@@ -441,6 +441,21 @@ address{
 
 address a{
     font-size: inherit;
+}
+
+footer a{
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 166px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+    align-items: center;
 }
 
 footer strong{
