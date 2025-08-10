@@ -12,7 +12,7 @@
         <h1 class="header__logo">Mod</h1>
         <nav>
           <ul class="header__menu">
-            <li><a href="#biography">Biography</a></li>
+            <li><a onclick="window.myDialog.showModal()">Biography</a></li>
             <li><a href="#designers">Designers</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#strengths">Strong points</a></li>
@@ -175,5 +175,10 @@
         <p class="footer__product">A product of <strong>MOD</strong></p>
         <p class="footer__copyright">© 2023 Mod Media. All rights reserved</p>
       </footer>
+
+      <dialog id="myDialog">
+           <h3>Get in touch</h3>
+           <button onclick="window.myDialog.close()">Close</button>
+      </dialog>
 </body>
 </html>
