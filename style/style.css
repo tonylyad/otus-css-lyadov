@@ -95,6 +95,10 @@ header {
   display: none;
 }
 
+.icon {
+  cursor: pointer;
+}
+
 /*Hero*/
 .hero {
   height: 630px;
