@@ -16,13 +16,14 @@
             <li><a href="#designers">Designers</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#strengths">Strong points</a></li>
+            <li><img class="icon" src="img/message-icon.svg" alt="dots icon" onclick="window.myDialog.showModal()"></li>
           </ul>
           <ul class="header__menu--mobile">
             <li><a href="#biography">B</a></li>
             <li><a href="#designers">D</a></li>
             <li><a href="#testimonials">T</a></li>
             <li><a href="#strengths">S</a></li>
-            <li><a href="#"><img class="icon" src="img/message-icon.svg" alt="dots icon"></a></li>
+            <li><a href="#"><img class="icon" src="img/message-icon.svg" alt="dots icon" onclick="window.myDialog.showModal()"></a></li>
           </ul>
         </nav>
       </header>
@@ -175,5 +176,10 @@
         <p class="footer__product">A product of <strong>MOD</strong></p>
         <p class="footer__copyright">© 2023 Mod Media. All rights reserved</p>
       </footer>
+
+      <dialog id="myDialog">
+           <h3>Get in touch</h3>
+           <button onclick="window.myDialog.close()">Close</button>
+      </dialog>
 </body>
 </html>
